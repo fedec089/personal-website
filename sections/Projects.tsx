@@ -203,37 +203,41 @@ const Projects: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, transition: { duration: 0.2 } }}
                     transition={{ delay: 0.2, duration: 0.4 }}
-                    className="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col md:flex-row justify-between items-end gap-6 pointer-events-none"
+                    className="absolute bottom-0 left-0 w-full p-6 md:p-10 pointer-events-none flex justify-center md:justify-start"
                   >
-                    <div className="max-w-xl text-left pointer-events-auto">
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-[10px] md:text-xs font-mono border border-white/30 rounded-full px-2 py-1 text-white bg-black/40 backdrop-blur-sm">
-                          {project.year}
-                        </span>
-                        <span className="text-[10px] md:text-xs uppercase tracking-widest text-orange-400">
-                          {project.category}
-                        </span>
+                    <div className="pointer-events-auto bg-black/60 backdrop-blur-xl border border-white/10 p-6 md:p-8 rounded-2xl max-w-3xl w-full shadow-2xl">
+                      <div className="flex flex-col md:flex-row justify-between items-end gap-6">
+                        <div className="text-left w-full">
+                          <div className="flex items-center gap-3 mb-4">
+                            <span className="text-[10px] md:text-xs font-mono border border-white/30 rounded-full px-2 py-1 text-white bg-white/5 backdrop-blur-sm">
+                              {project.year}
+                            </span>
+                            <span className="text-[10px] md:text-xs uppercase tracking-widest text-orange-400 font-bold">
+                              {project.category}
+                            </span>
+                          </div>
+
+                          <h3 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight">
+                            {project.title}
+                          </h3>
+
+                          <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed">
+                            {project.description}
+                          </p>
+                        </div>
+
+                        <div className="shrink-0 w-full md:w-auto">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-full uppercase text-xs font-bold tracking-widest hover:bg-orange-100 transition-colors shadow-lg w-full md:w-auto"
+                            data-hover="true"
+                          >
+                            Vedi Sito <ArrowUpRight size={16} />
+                          </a>
+                        </div>
                       </div>
-
-                      <h3 className="text-3xl md:text-5xl font-medium text-white mb-3 leading-tight drop-shadow-lg">
-                        {project.title}
-                      </h3>
-
-                      <p className="text-gray-200 text-sm md:text-base font-light line-clamp-3 md:line-clamp-none drop-shadow-md">
-                        {project.description}
-                      </p>
-                    </div>
-
-                    <div className="shrink-0 pointer-events-auto">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full uppercase text-xs font-bold tracking-widest hover:bg-orange-100 transition-colors shadow-lg"
-                        data-hover="true"
-                      >
-                        Vedi Sito <ArrowUpRight size={16} />
-                      </a>
                     </div>
                   </motion.div>
                 )}
