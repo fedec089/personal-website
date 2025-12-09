@@ -38,7 +38,7 @@ const projects: Project[] = [
     category: "Healthcare",
     year: "2022",
     image: "/assets/blueeye.png",
-    description: "Sito web per clinica dentistica. Interfaccia moderna, design responsive e navigazione rapida. Sviluppato per agenzia terza.",
+    description: "Sito web per clinica oculistica. Interfaccia moderna, design responsive e navigazione rapida. Sviluppato per agenzia terza.",
     link: "https://blueeye.it/"
   },
   {
