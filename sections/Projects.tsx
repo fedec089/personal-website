@@ -20,7 +20,7 @@ const projects: Project[] = [
     category: "WooCommerce",
     year: "2023",
     image: "/assets/benessence.png",
-    description: "Sviluppo personalizzato su base WooCommerce per un’azienda leader nella vendita di prodotti ayurvedici biologici.",
+    description: "Sviluppo personalizzato su base WooCommerce per un’azienda leader nella vendita di prodotti ayurvedici biologici. Sviluppo front e back-end, design a cura di Tiablo",
     link: "https://www.benessence.it/"
   },
   {
@@ -38,7 +38,7 @@ const projects: Project[] = [
     category: "Healthcare",
     year: "2022",
     image: "/assets/blueeye.png",
-    description: "Sito web per clinica oculistica. Interfaccia moderna, design responsive e navigazione rapida. Sviluppato per agenzia terza.",
+    description: "Sito web per clinica oculistica. Interfaccia moderna, design responsive e navigazione rapida. Sviluppo front e back-end, design a cura di Tiablo",
     link: "https://blueeye.it/"
   },
   {
